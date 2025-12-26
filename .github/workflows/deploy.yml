@@ -18,22 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Create app directory
-        run: |
-          mkdir -p app
-          cat > app/index.html <<'EOF'
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <meta charset="utf-8">
-            <title>schedule.arthurreira.dev</title>
-          </head>
-          <body>
-            <h1>schedule.arthurreira.dev</h1>
-            <p>Deployed via Terraform + GitHub Pages</p>
-          </body>
-          </html>
-          EOF
       - uses: actions/upload-pages-artifact@v3
         with:
           path: './app'
