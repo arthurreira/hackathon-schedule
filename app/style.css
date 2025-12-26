@@ -19,3 +19,12 @@ code {
   border-radius: 3px;
   font-family: 'Courier New', monospace;
 }
+   
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; background-color: #f4f4f4; }
+    h1 { color: #333; text-align: center; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+    th { background-color: #4CAF50; color: white; }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    tr:hover { background-color: #ddd; }
+    .time { font-weight: bold; }
